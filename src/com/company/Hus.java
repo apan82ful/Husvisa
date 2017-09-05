@@ -67,7 +67,8 @@ public class Hus {
 
     @Override
     public String toString() {
-        return "Adress: " + adress+"," + " våningar: " + våningar+"," + " värde: " + värde+"," + " byggnadsår: " + byggnadsår+"," + "yta: " + yta+"," + "bil: " + bil;
+        return "Adress: " + adress+"," + " våningar: " + våningar+"," + " värde: " + värde+"," +
+                " byggnadsår: " + byggnadsår+"," + "yta: " + yta+","+ "\n" + "bil: "  + bil;
     }
 
     public Bil getBil() {
@@ -77,4 +78,8 @@ public class Hus {
     public void setBil(Bil bil) {
         this.bil = bil;
     }
+    public void värdeÖkning(int år){
+        värde *= Math.pow(1.05, år);
+    }
+
 }

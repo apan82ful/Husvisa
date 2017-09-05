@@ -4,13 +4,16 @@ package com.company;
 //Visa husen och vilka personer som bor där och vilka bilar som finns där. 2 bilar räcker.
 public class Bil {
     private String modell;
-    private int värde;
+    private double värde;
+    private int nyvärde;
     private int km;
+    private int antalÅr;
+
 
     public Bil(){
 
     }
-    public Bil(String modell, int värde, int km){
+    public Bil(String modell, double värde, int km){
         this.modell = modell;
         this.värde = värde;
         this.km = km;
@@ -24,7 +27,7 @@ public class Bil {
         this.modell = modell;
     }
 
-    public int getVärde() {
+    public double getVärde() {
         return värde;
     }
 
@@ -43,4 +46,9 @@ public class Bil {
     public String toString() {
         return "Modell: " + modell + "," + " värde: " + värde + "," + " Km: " + km;
     }
+
+    public void värdeMinskning(int år){
+        värde *= Math.pow(0.8, år);
+    }
+
 }

@@ -13,6 +13,9 @@ public class PersonLista {
 
         }
     }
+    public Person get(int i){
+        return lista[i];
+    }
 
     public void print() {
         for (int j = 0; j < i; j++) {

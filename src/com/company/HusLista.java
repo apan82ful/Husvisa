@@ -13,10 +13,14 @@ public class HusLista {
 
         }
     }
+    public Hus get(int i){
+        return lista[i];
+    }
+
 
     public void print() {
         for (int j = 0; j < i; j++) {
-            System.out.println();
+            System.out.println(lista[j]);
         }
     }
 

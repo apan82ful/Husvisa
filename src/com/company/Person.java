@@ -85,4 +85,7 @@ public class Person {
     public void setHus(Hus hus) {
         this.hus = hus;
     }
+    public void åldras(int år){
+        ålder += år;
+    }
 }

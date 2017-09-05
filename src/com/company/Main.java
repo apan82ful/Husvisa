@@ -46,6 +46,30 @@ public class Main {
         HSL.print();
         System.out.println();
 
+        for (int i = 0; i < 3; i++) {
+            BSL.get(i).värdeMinskning(10);
+
+            //variant av ovanstående!
+            //Bil bil = BSL.get(i);
+            //bil.värdeMinskning(10);
+        }
+        for (int i = 0; i < 3; i++) {
+            HSL.get(i).värdeÖkning(10);
+        }
+        for (int i = 0; i < 4; i++) {
+            PSL.get(i).åldras(10);
+        }
+
+        BSL.print();
+        System.out.println();
+        HSL.print();
+        System.out.println();
+        PSL.print();
+        System.out.println();
+
+
+
+
 
 
         /*System.out.println(billigaHuset);
